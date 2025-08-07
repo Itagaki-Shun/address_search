@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-class SearchController < ApplicationController
+class LocationsController < ApplicationController
   def index
   end
 
-  def search
+  def new
   end
 end
