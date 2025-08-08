@@ -1,0 +1,10 @@
+<div id="<%= dom_id location %>">
+  <ul>
+    <li>
+      <strong><%= Location.human_attribute_name(:latitude) %>:</strong>
+      <%= location.latitude %> |
+      <strong><%= Location.human_attribute_name(:longitude) %>:</strong>
+      <%= location.longitude %>
+    </li>
+  </ul>
+</div>
