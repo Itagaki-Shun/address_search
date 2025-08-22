@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_08_07_065534) do
+ActiveRecord::Schema[8.0].define(version: 2025_08_22_022609) do
   create_table "locations", force: :cascade do |t|
     t.integer "latitude"
     t.integer "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
   end
 end
