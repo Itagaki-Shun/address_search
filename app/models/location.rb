@@ -4,7 +4,7 @@ class Location < ApplicationRecord
   before_save :get_address
 
   def get_address
-    results = Geocoder.search([self.latitude,self.longitude])
+    results = Geocoder.search([ self.latitude, self.longitude ])
     self.address = results.first.address
   end
 end
